@@ -429,6 +429,7 @@ body.nav-active { overflow: hidden; }
 }
 
 .copyright-text {
+  margin-top: 16px;
   color: var(--text-alice-blue);
   font-size: var(--fontSize-8);
 }
