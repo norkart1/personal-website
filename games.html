@@ -165,30 +165,30 @@
 
           <div class="hero-content">
 
-            <p class="hero-subtitle">Hello Everyone!</p>
+            <!-- <p class="hero-subtitle">Hello Everyone!</p> -->
 
             <h1 class="headline headline-1 section-title">
-              I’m <span class="span">CaptNork</span>
+            <span class="span">NorkCraft Network</span>
             </h1>
 
             <p class="hero-text">
-             "Being a student is easy. Learning requires actual work."
+             Minecraft Bedrock Server.
             </p>
 
-            <div class="input-wrapper">
+            
+<div class="input-wrapper">
 
-              <input type="email" name="email_address" placeholder="Type your email address" required
-                class="input-field" autocomplete="off">
+  <input type="text" name="email_address" placeholder="44.541.88.44:9907" required class="input-field"
+      autocomplete="off" value="44.541.88.44:9907" id="myInput" disabled type="text">
 
-              <button  href="subscribe.html"  class="btn btn-primary">
-                <span class="span">Subscribe</span>
-                
+  <button href="subscribe.html" class="btn btn-primary" onclick="myFunction()">
+      <span class="span">Copy</span>
 
-                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-              </button>
 
-            </div>
+      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+  </button>
 
+</div>
           </div>
          
 
@@ -642,7 +642,8 @@
       <!-- 
         - #POPULAR TAGS
       -->
-
+<!-- 
+                </li>
       <section class="tags" aria-labelledby="tag-label">
         <div class="container">
           <h2 class="headline headline-2 section-title" id="tag-label">
@@ -755,7 +756,7 @@
 
         </div>
       </section>
-
+ -->
 
 
 
@@ -763,7 +764,7 @@
       <!-- 
         - #RECENT POST
       -->
-
+<!-- 
       <section class="section recent-post" id="recent" aria-labelledby="recent-label">
         <div class="container">
 
@@ -1259,7 +1260,6 @@
                     <img src="./assets/images/insta-post-4.png" width="276" height="277" loading="lazy" alt="insta post"
                       class="img-cover">
                   </a>
-                </li>
 
                 <li>
                   <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
@@ -1306,7 +1306,7 @@
       </section>
 
     </article>
-  </main>
+  </main> -->
 
 
 
@@ -1321,7 +1321,7 @@
 
       <div class="card footer">
 
-        <div class="section footer-top">
+        <!-- <div class="section footer-top">
 
           <div class="footer-brand">
 
@@ -1334,12 +1334,12 @@
               unknown prnoto sans took a galley and scrambled it to five centurie.
             </p>
 
-            <!-- <p class="footer-list-title">Address</p>
+            <p class="footer-list-title">Address</p>
 
             <address class="footer-text address">
               123 Main Street <br>
               New York, NY 10001
-            </address> -->
+            </address> 
 
           </div>
 
@@ -1429,7 +1429,7 @@
 
           </div>
 
-        </div>
+        </div> -->
 
         <div class="footer-bottom">
 
@@ -1485,10 +1485,21 @@
   </a>
 
 
+  <script>
+    function myFunction() {
+        var subscribe = document.getElementById("myInput");
+        subscribe.select();
+        subscribe.setSelectionRange(0, 99999);
+
+        navigator.clipboard.writeText(subscribe.value);
+
+        alert("Clifhsak" + subscribe.value);
+
+    }
+</script>
 
 
-
-  <!-- 
+  <!--  
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
